@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1E1C8D7-A767-4412-9033-98B463DF2816}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnimalKingdomSimulator</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimalKingdomWorld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalKingdomWorld.Designer.cs">
+      <DependentUpon>AnimalKingdomWorld.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\Bear.cs" />
+    <Compile Include="Animals\Bunny.cs" />
+    <Compile Include="Animals\Reptile\Croc.cs" />
+    <Compile Include="Animals\Reptile\Gecko.cs" />
+    <Compile Include="Animals\Reptile\Reptile.cs" />
+    <Compile Include="Animals\Reptile\ReptileAdapter.cs" />
+    <Compile Include="Animals\Reptile\Snake.cs" />
+    <Compile Include="BoardState\State.cs" />
+    <Compile Include="BoardState\States\NoWorldState.cs" />
+    <Compile Include="BoardState\States\WorldPausedState.cs" />
+    <Compile Include="BoardState\States\WorldRunningState.cs" />
+    <Compile Include="EnviromentFactory.cs" />
+    <Compile Include="Environments\Decorators\Damaged.cs" />
+    <Compile Include="Environments\Decorators\EnvironmentDecorator.cs" />
+    <Compile Include="Environments\Decorators\Large.cs" />
+    <Compile Include="Environments\Decorators\Medium.cs" />
+    <Compile Include="Environments\Decorators\Perfect.cs" />
+    <Compile Include="Environments\Decorators\Small.cs" />
+    <Compile Include="Environments\Environment.cs" />
+    <Compile Include="Environments\Fruit.cs" />
+    <Compile Include="Environments\Plant.cs" />
+    <Compile Include="Environments\Water.cs" />
+    <Compile Include="FightBehaviors\Bite.cs" />
+    <Compile Include="FightBehaviors\FightBehavior.cs" />
+    <Compile Include="FightBehaviors\NoFight.cs" />
+    <Compile Include="FightBehaviors\Swipe.cs" />
+    <Compile Include="GridObject.cs" />
+    <Compile Include="Animals\Loin.cs" />
+    <Compile Include="FightBehaviors\Maul.cs" />
+    <Compile Include="Memento\AnimalKingdomCareTaker.cs" />
+    <Compile Include="Memento\AnimalKingdomMemento.cs" />
+    <Compile Include="Memento\Base\Caretaker.cs" />
+    <Compile Include="Memento\Base\Memento.cs" />
+    <Compile Include="Memento\Base\Originator.cs" />
+    <Compile Include="MoveBehaviors\Hop.cs" />
+    <Compile Include="MoveBehaviors\Leap.cs" />
+    <Compile Include="MoveBehaviors\MoveBehavior.cs" />
+    <Compile Include="MoveBehaviors\Slither.cs" />
+    <Compile Include="MoveBehaviors\Walk.cs" />
+    <Compile Include="Observer\MoveClockCounter.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\Subject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Animals\Tiger.cs" />
+    <EmbeddedResource Include="AnimalKingdomWorld.resx">
+      <DependentUpon>AnimalKingdomWorld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fruit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\013035-green-grunge-clipart-icon-animals-animal-snake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gecko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\croc.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

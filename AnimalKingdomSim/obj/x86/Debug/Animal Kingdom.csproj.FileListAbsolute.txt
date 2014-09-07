@@ -1,0 +1,8 @@
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\Animal Kingdom.csprojResolveAssemblyReference.cache
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\AnimalKingdomSimulator.AnimalKingdomWorld.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\AnimalKingdomSimulator.Properties.Resources.resources
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\Animal Kingdom.csproj.GenerateResource.Cache
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Kyle\Documents\Visual Studio 2012\Projects\Animal Kingdom(2)\Animal Kingdom\AnimalKingdomSim\obj\x86\Debug\WindowsFormsApplication1.pdb
